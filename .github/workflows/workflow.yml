@@ -42,3 +42,6 @@ jobs:
           echo test, and deploy your project.
       - name: check dir
         run: ls
+
+      - name: guardar archivo py en S3
+        run: aws s3 cp test_sample.py s3://bigdatalaura/
